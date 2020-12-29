@@ -1,3 +1,6 @@
+// Command to launch in Linux_Deployment is
+// $ node /apps/Linux_Deployment/hello_world_apps/hello_javascript.js
+
 const http = require('http');
 
 const hostname = '127.0.0.1';
