@@ -1,0 +1,9 @@
+[Unit]
+Description=My Application
+After=multi-user.target # Run once the multi user environment has loaded.
+[Service]
+Type=idle # Run only after everything else is loaded
+Environment="PORT=8080" # This is optional, for environment variables.
+ExecStart=/usr/bin/node /root/myapp/app.js # Command to run.
+[Install]
+WantedBy=multi-user.target
