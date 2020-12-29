@@ -3,6 +3,6 @@ Description=My Node Application
 After=multi-user.target # Run once the multi user environment has loaded.
 [Service]
 Type=idle # Run only after everything else is loaded
-ExecStart=node /apps/Linux_Deployment/hello_world_apps/hello_javascript.js # Command to run.
+ExecStart=/usr/bin/node /apps/Linux_Deployment/hello_world_apps/hello_javascript.js # Command to run.
 [Install]
 WantedBy=multi-user.target
