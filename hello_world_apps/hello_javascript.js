@@ -3,7 +3,7 @@
 
 const http = require('http');
 
-const hostname = 'alexambrioso.com/node_app';
+const hostname = 'nodeapp.alexambrioso.com';
 const port = 3000;
 
 const server = http.createServer((req, res) => {
