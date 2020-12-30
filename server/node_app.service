@@ -1,5 +1,5 @@
 [Unit]
-Description=My Node Application
+Description=hello_javascript
 After=multi-user.target # Run once the multi user environment has loaded.
 
 [Service]
