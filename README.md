@@ -10,3 +10,5 @@ I will be following this nice article by Imran Remtulla [local host to .com ...]
 
 I will use the repository to deploy some simple apps.   Ultimately, I would like to deploy the Lektor static CMS for a personal 
 blog as well as any other apps I am developing.
+
+Everything is worked out up to the creation of the NGINX file.

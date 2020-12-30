@@ -2,12 +2,22 @@
 curl -sL https://deb.nodesource.com/setup_14.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
+# To copy service file to the correct folder
+cp /apps/Linux_Deployment/server/app.service /etc/systemd/system/app.service
+
 # To run the app
 sudo systemctl daemon-reload
-sudo systemctl enable nodeapp.service
-sudo systemctl start nodeapp.service
+sudo systemctl enable app.service
+sudo systemctl start app.service
 
-# To install nginx, check the installation, and start it and the app.
+# To check if app is running correctly
+localhost:<port number>
+
+# To copy nginx file to the correct folder
+cp /apps/Linux_Deployment/server/app.nginx /etc/nginx/sites-enabled/app.nginx
+
+
+# To install nginx (if necessary), check the installation, and start it and the app.
 sudo apt install nginx
 sudo nginx -t
 sudo systemctl restart nginx
