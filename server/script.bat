@@ -14,7 +14,7 @@ sudo systemctl start app.service
 localhost:<port number>
 
 # To copy nginx file to the correct folder
-cp /apps/Linux_Deployment/server/app.nginx /etc/nginx/sites-enabled/app.nginx
+cp /apps/Linux_Deployment/server/app.com.conf /etc/nginx/sites-enabled/app.com.conf
 
 
 # To install nginx (if necessary), check the installation, and start it and the app.
